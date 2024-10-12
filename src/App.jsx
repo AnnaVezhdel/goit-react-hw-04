@@ -6,9 +6,10 @@ import Loader from './components/Loader/Loader'
 import SearchBar from './components/SearchBar/SearchBar'
 
 
+
 function App() {
   useEffect(() => {
-  axios.get('https://api.unsplash.com/photos/?client_id=YOUR_ACCESS_KEY')
+  axios.get('https://api.unsplash.com/photos/?client_id=41cosF564XUZ5gR0hUuTx32XpetmnkYga7XyLCIyg2U').then(res => console.log(res.data))
 }, [])
   return (
     <>
