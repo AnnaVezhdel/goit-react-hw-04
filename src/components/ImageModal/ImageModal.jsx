@@ -2,6 +2,9 @@ import Modal from "react-modal";
 
 const ImageModal = ({ image, isOpen, onRequestClose }) => {
   const customStyles = {
+    overlay: {
+      zIndex: "999",
+    },
     content: {
       top: "50%",
       left: "50%",
@@ -21,7 +24,7 @@ const ImageModal = ({ image, isOpen, onRequestClose }) => {
     >
       <img
         style={{
-          maxHeight: "900px",
+          maxHeight: "90vh",
         }}
         src={image.urls.regular}
         alt={image.alt_description}
