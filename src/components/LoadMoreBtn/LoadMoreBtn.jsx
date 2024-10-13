@@ -14,7 +14,7 @@ const LoadMoreBtn = ({ setPage }) => {
           borderRadius: "8px",
           cursor: "pointer",
           backgroundColor: "darkblue",
-          padding: "10px 15px",
+          padding: "14px 20px",
         }}
         onClick={() => setPage((prev) => prev + 1)}
       >

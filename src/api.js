@@ -7,7 +7,7 @@ export const fetchImages = async (page = 1, query) => {
         client_id: "41cosF564XUZ5gR0hUuTx32XpetmnkYga7XyLCIyg2U",
         query: query,
         page: page,
-        per_page: 9,
+        per_page: 12,
       },
     })
     .then((response) => response.data);

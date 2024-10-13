@@ -19,7 +19,13 @@ const ImageModal = ({ image, isOpen, onRequestClose }) => {
       contentLabel="Image Modal"
       style={customStyles}
     >
-      <img src={image.urls.regular} alt={image.alt_description} />
+      <img
+        style={{
+          maxHeight: "900px",
+        }}
+        src={image.urls.regular}
+        alt={image.alt_description}
+      />
     </Modal>
   );
 };
