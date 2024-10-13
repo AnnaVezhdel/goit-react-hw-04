@@ -1,9 +1,14 @@
-const ImageCard = () => {
-    return (
-    <div>
-    <img src="" alt="" />
-    </div>
-    )
-}
+import s from "./ImageCard.module.css";
 
-export default ImageCard
+const ImageCard = ({ setSelectedImage, image }) => {
+  const handleClick = () => {
+    setSelectedImage(image);
+  };
+  return (
+    <li className={s.card} onClick={handleClick}>
+      <img src={image.urls.small} alt={image.alt_description} />
+    </li>
+  );
+};
+
+export default ImageCard;
