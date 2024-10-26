@@ -68,7 +68,7 @@ function App() {
   }, [page, query]);
 
   return (
-    <div className="container">
+    <>
       <SearchBar setQuery={handleSetQuery} />
       {images.length > 0 && (
         <ImageGallery
@@ -84,7 +84,7 @@ function App() {
       {errorMessage && <ErrorMessage errorMessage={errorMessage} />}
       {!isLoading && totalPages > page && <LoadMoreBtn setPage={setPage} />}
       {isLoading && <Loader />}
-    </div>
+    </>
   );
 }
 

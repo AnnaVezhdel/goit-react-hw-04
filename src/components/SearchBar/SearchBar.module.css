@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vmax;
   z-index: 2;
   display: flex;
   margin: 0 auto;
